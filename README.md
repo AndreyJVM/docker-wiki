@@ -1,6 +1,6 @@
 | command  | Description |
 | ------------- | ------------- |
-| **docker version** | Output of information about the glue and the server |
+| **docker version** | Output of information |
 | **docker ps -a** | Displaying information about all containers |
 | **docker images** | Displaying a list of images |
 | **docker rm \<name>** | Deleting a container |
@@ -19,7 +19,7 @@
 
 
 
-#### Line breaks when writing long commands
+#### Long commands
 ```shell
 docker run \
   --name my_nginx \
