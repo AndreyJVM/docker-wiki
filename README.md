@@ -12,9 +12,9 @@
 | **docker run \<name>** | Creating a container |
 | **docker run -it \<name>** | Switching to interactive mode |
 | **docker run -d \<name>** | Running in the background |
-| **docker run -d --name \<cast_name> \<name>** | Assign a name|
-| **docker run -p <external_port>:<container_port> \<name>** | Port mapping |
-| **docker run -v <local_path>:<container_path> \<name>** | Volume mapping |
+| **docker run -d --name \<cast_name> \<image>** | Assign a name|
+| **docker run -p <external_port>:<container_port> \<image>** | Port mapping |
+| **docker run -v <local_path>:<container_path> \<image>** | Volume mapping |
 | **docker run --rm \<name>** | Automatic deletion |
 
 
