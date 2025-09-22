@@ -12,6 +12,7 @@
 | `docker container inspect <container_name or container_id>` | Получение информации о контейнере |
 | `docker stop <container_name or container_id> ~ docker kill <container_name or container_id> `| Остановка контейнера |
 | `docker exec -it <container_name or container_id> bash` | Подключение к запущенному контейнеру |
+|  **docker run** |
 | `docker run -d --name <cast_name> <container_name>` | Присвоить контейнеру уникальное имя|
 | `docker run -p <external_port>:<container_port> <container_name>` | Меппинг портов |
 | `docker run -v <local_path>:<container_path> <container_name>` |  Меппинг томов |
