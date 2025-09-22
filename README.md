@@ -1,22 +1,21 @@
 | command  | Description |
 | ------------- | ------------- |
-| `docker version` | Вывод информации о клеите и сервере Docker  |
-| `docker ps -a`  | Вывод информации о запущенных и остановленных контейнерах  |
-| `docker images` | Вывод списка локальных образов |
+| `docker version` | Вывод информации о клеите и сервере |
+| `docker ps -a`  | Вывод информации о всех контейнерах  |
+| `docker images` | Вывод списка образов |
 | `docker run <container_name>`| Создание контейнера |
-| `docker rm <container_name or container_id>`| Удаление контейнера |
+| `docker rm <container_name>`| Удаление контейнера |
 | `docker container prune` | Удаляем все остановленные контейнеры |
-| `docker rm -f $(docker ps -aq)` | Принудительное удаление всех контейнеров |
-| `docker run -it <container_name>`| Переход в интерактивный режим контейнера |
-| `docker run -d <container_name>` | Запуск контейнера в фоновом режиме |
-| `docker container inspect <container_name or container_id>` | Получение информации о контейнере |
-| `docker stop <container_name or container_id> ~ docker kill <container_name or container_id> `| Остановка контейнера |
-| `docker exec -it <container_name or container_id> bash` | Подключение к запущенному контейнеру |
-|  **docker run** |
-| `docker run -d --name <cast_name> <container_name>` | Присвоить контейнеру уникальное имя|
+| `docker rm -f $(docker ps -aq)` | Принудительное удаление |
+| `docker run -it <container_name>`| Переход в интерактивный режим |
+| `docker run -d <container_name>` | Запуск в фоновом режиме |
+| `docker container inspect <container_name>` | Получение информации |
+| `docker stop <container_name> ~ docker kill <container_name> `| Остановка контейнера |
+| `docker exec -it <container_name> bash` | Подключение к контейнеру |
+| `docker run -d --name <cast_name> <container_name>` | Присвоить имя|
 | `docker run -p <external_port>:<container_port> <container_name>` | Меппинг портов |
 | `docker run -v <local_path>:<container_path> <container_name>` |  Меппинг томов |
-| `docker run --rm <container_name>` | Автоматическое удаление остановленных контейнеров |
+| `docker run --rm <container_name>` | Автоматическое удаление |
 
 
 
