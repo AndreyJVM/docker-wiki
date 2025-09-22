@@ -1,25 +1,25 @@
 | command  | Description |
 | ------------- | ------------- |
-| **docker version** | Вывод информации о клеите и сервере |
-| **docker ps -a** | Вывод информации о всех контейнерах  |
-| **docker images** | Вывод списка образов |
-| **docker rm \<name>** | Удаление контейнера |
-| **docker rm -f $(docker ps -aq)** | Принудительное удаление |
-| **docker container prune** | Удаляем все остановленные контейнеры |
-| **docker container inspect \<name>** | Получение информации |
-| **docker stop <name> ~ docker kill \<name>** | Остановка контейнера |
-| **docker exec -it \<name> bash** | Подключение к контейнеру |
-| **docker run \<name>** | Создание контейнера |
-| **docker run -it \<name>** | Переход в интерактивный режим |
-| **docker run -d \<name>** | Запуск в фоновом режиме |
-| **docker run -d --name \<cast_name> \<name>** | Присвоить имя|
-| **docker run -p <external_port>:<container_port> \<name>** | Меппинг портов |
-| **docker run -v <local_path>:<container_path> \<name>** |  Меппинг томов |
-| **docker run --rm \<name>** | Автоматическое удаление |
+| **docker version** | Output of information about the glue and the server |
+| **docker ps -a** | Displaying information about all containers |
+| **docker images** | Displaying a list of images |
+| **docker rm \<name>** | Deleting a container |
+| **docker rm -f $(docker ps -aq)** | Forced deletion |
+| **docker container prune** | Deleting all stopped containers |
+| **docker container inspect \<name>** | Getting information |
+| **docker stop <name> ~ docker kill \<name>** | Container stop |
+| **docker exec -it \<name> bash** | Connecting to a container |
+| **docker run \<name>** | Creating a container |
+| **docker run -it \<name>** | Switching to interactive mode |
+| **docker run -d \<name>** | Running in the background |
+| **docker run -d --name \<cast_name> \<name>** | Assign a name|
+| **docker run -p <external_port>:<container_port> \<name>** | Port mapping |
+| **docker run -v <local_path>:<container_path> \<name>** | Volume mapping |
+| **docker run --rm \<name>** | Automatic deletion |
 
 
 
-#### Перенос строк при написании длинных команд
+#### Line breaks when writing long commands
 ```shell
 docker run \
   --name my_nginx \
